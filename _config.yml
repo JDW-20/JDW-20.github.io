@@ -29,6 +29,8 @@ url: "https://jdw-20.github.io" # the base hostname & protocol for your site, e.
 # Build settings
 theme: minima
 
+header_pages:
+  - none.md
 
 minima:
   skin: auto

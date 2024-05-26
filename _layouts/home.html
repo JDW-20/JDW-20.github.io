@@ -1,61 +1,67 @@
----
-layout: base
----
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Editorial by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+	</head>
+	<body class="is-preload">
 
-<div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-  {{ content }}
+        {% if site.paginate %}
+          {% assign posts = paginator.posts %}
+        {% else %}
+          {% assign posts = site.posts %}
+        {% endif %}
 
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
 
-  {% if site.paginate %}
-    {% assign posts = paginator.posts %}
-  {% else %}
-    {% assign posts = site.posts %}
-  {% endif %}
+							{%- include header.html -%}
 
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Posts</h2>
+									</header>
+									<div class="posts">
+                    {%- for post in posts -%}
+										<article>
+                      {% if post.cover-image %}
+											<a href="{{ post.url | relative_url }}" class="image"><img src="{{ post.cover-image }}" alt="" /></a>
+                      {% else %}
+                      <a href="{{ post.url | relative_url }}" class="image"><img src="/assets/images/thumbnails/default.jpg" alt="" /></a>
+                      {% endif %}
+											<h3>{{ post.title | escape }}</h3>
+											<p>{{ post.excerpt }}</p>
+											<ul class="actions">
+												<li><a href="{{ post.url | relative_url }}" class="button">More</a></li>
+											</ul>
+                    </article>
+                    {%- endfor -%}
+									</div>
+								</section>
+						</div>
+					</div>
 
-  {%- if posts.size > 0 -%}
-    {%- if page.list_title -%}
-      <h2 class="post-list-heading">{{ page.list_title }}</h2>
-    {%- endif -%}
-    <ul class="post-list">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      {%- for post in posts -%}
-      <li>
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-
-    {% if site.paginate %}
-      <div class="pager">
-        <ul class="pagination">
-        {%- if paginator.previous_page %}
-          <li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{ paginator.previous_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-          <li><div class="current-page">{{ paginator.page }}</div></li>
-        {%- if paginator.next_page %}
-          <li><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-        </ul>
+          {%- include sidebar.html -%}
       </div>
-    {%- endif %}
 
-  {%- endif -%}
+		<!-- Scripts -->
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/browser.min.js"></script>
+			<script src="/assets/js/breakpoints.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<script src="/assets/js/main.js"></script>
 
-</div>
+	</body>
+</html>

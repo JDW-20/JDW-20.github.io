@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "An Introduction"
+cover-image: /assets/images/thumbnails/goose.jpg
 date:   2024-05-24 15:58:56 -0400
 categories: assignment introduction
 ---

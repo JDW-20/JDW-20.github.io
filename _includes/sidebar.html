@@ -1,0 +1,65 @@
+				<!-- Sidebar -->
+
+            {% if site.paginate %}
+                {% assign posts = paginator.posts %}
+              {% else %}
+                {% assign posts = site.posts %}
+              {% endif %}
+
+                <div id="sidebar">
+                    <div class="inner">
+
+                        <!-- Search -->
+                            <!-- <section id="search" class="alt">
+                                <form method="post" action="#">
+                                    <input type="text" name="query" id="query" placeholder="Search" />
+                                </form>
+                            </section> -->
+
+                        <!-- Section -->
+                            <section>
+                                <header class="major">
+                                    <h2>Latest Posts</h2>
+                                </header>
+                                <div class="mini-posts">
+                                {%- for post in posts limit:3 -%}
+                                    <article>
+                                        {% if post.cover-image %}
+                                        <a href="{{ post.url | relative_url }}" class="image"><img src="{{ post.cover-image }}" alt="" /></a>
+                                        {% else %}
+                                        <a href="{{ post.url | relative_url }}" class="image"><img src="/assets/images/thumbnails/default.jpg" alt="" /></a>
+                                        {% endif %}
+                                        <p>{{ post.title | escape }}</p>
+                                    </article>
+                                {%- endfor -%}
+                                </div>
+                                <ul class="actions">
+                                    <li><a href="/index.html" class="button">More</a></li>
+                                </ul>
+                            </section>
+
+                        <!-- Section -->
+                            <section>
+                                <header class="major">
+                                    <h2>About</h2>
+                                </header>
+                                <p>{{ site.data.strings.about-message }}</p>
+                            </section>
+
+                            <section>
+                                <!-- <p class="feed-subscribe"> -->
+                                    <a href="{{ site.feed.path | default: 'feed.xml' | absolute_url }}">
+                                        RSS Feed
+                                    </a>
+                                  <!-- </p> -->
+                            </section>
+
+                        <!-- Footer -->
+                            <footer id="footer">
+                                <p class="copyright">{{ site.data.strings.footer-message }}</p>
+                            </footer>
+
+                    </div>
+                </div>
+
+        </div>
