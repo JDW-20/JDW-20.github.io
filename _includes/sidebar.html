@@ -17,7 +17,24 @@
                             </section> -->
 
                         <!-- Section -->
-                        {% if ishome != true %}
+
+                        <!-- Section -->
+                            <section>
+                                <header class="major">
+                                    <h2>About</h2>
+                                </header>
+                                <p>{{ site.data.strings.about-message }}</p>
+                            </section>
+
+                            <section>
+                                <!-- <p class="feed-subscribe"> -->
+                                    <a href="{{ site.feed.path | default: 'feed.xml' | absolute_url }}">
+                                        RSS Feed
+                                    </a>
+                                  <!-- </p> -->
+                            </section>
+
+                            {% if ishome != true %}
                             <section>
                                 <header class="major">
                                     <h2>Latest Posts</h2>
@@ -39,22 +56,6 @@
                                 </ul>
                             </section>
                             {% endif %}
-
-                        <!-- Section -->
-                            <section>
-                                <header class="major">
-                                    <h2>About</h2>
-                                </header>
-                                <p>{{ site.data.strings.about-message }}</p>
-                            </section>
-
-                            <section>
-                                <!-- <p class="feed-subscribe"> -->
-                                    <a href="{{ site.feed.path | default: 'feed.xml' | absolute_url }}">
-                                        RSS Feed
-                                    </a>
-                                  <!-- </p> -->
-                            </section>
 
                         <!-- Footer -->
                             <footer id="footer">
