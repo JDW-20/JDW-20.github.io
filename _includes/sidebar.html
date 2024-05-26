@@ -17,6 +17,7 @@
                             </section> -->
 
                         <!-- Section -->
+                        {% if ishome != true %}
                             <section>
                                 <header class="major">
                                     <h2>Latest Posts</h2>
@@ -33,12 +34,11 @@
                                     </article>
                                 {%- endfor -%}
                                 </div>
-                                {% if ishome != true %}
                                 <ul class="actions">
                                     <li><a href="/index.html" class="button">More Posts</a></li>
                                 </ul>
-                                {% endif %}
                             </section>
+                            {% endif %}
 
                         <!-- Section -->
                             <section>
