@@ -37,8 +37,8 @@
 									<div class="posts">
                     {%- for post in posts -%}
 										<article>
-                      {% if post.cover-image %}
-											<a href="{{ post.url | relative_url }}" class="image"><img src="{{ post.cover-image }}" alt="" /></a>
+                      {% if post.image %}
+											<a href="{{ post.url | relative_url }}" class="image"><img src="{{ post.image }}" alt="" /></a>
                       {% else %}
                       <a href="{{ post.url | relative_url }}" class="image"><img src="/assets/images/thumbnails/default.jpg" alt="" /></a>
                       {% endif %}
