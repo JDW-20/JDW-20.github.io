@@ -14,8 +14,8 @@ Originally, I tried to make this post on WordPress but it took a while to get ri
 ## Some photos
 Here are some photos of animals that I've taken in Tallahassee
 
-![A photo of a goose swimming at Lake Ella](/assets/goose.jpg)
+![A photo of a goose swimming at Lake Ella](/assets/images/goose.jpg)
 
-![Campus cat by the health and wellness building](/assets/cat.jpg)
+![Campus cat by the health and wellness building](/assets/images/cat.jpg)
 
-![Cardinal in a tree](/assets/cardinal.jpg)
+![Cardinal in a tree](/assets/images/cardinal.jpg)
