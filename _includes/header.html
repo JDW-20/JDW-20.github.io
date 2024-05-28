@@ -1,3 +1,8 @@
 <header id="header">
-    <a href="/index.html" class="logo">{{ site.title }}</a>
+    <a href="/index.html" class="logo" style="  display:flex; justify-content:left; align-items:center; height: 30px;">
+        {% if site.data.flags.display-logo == true %}
+        <img src="/assets/images/logo.svg" class="logo" width="70px" height="70px" style="padding-right: 10px; padding-bottom: 20px"/>
+        {% endif %}
+        <span>{{ site.title }}</span>
+    </a>
 </header>
