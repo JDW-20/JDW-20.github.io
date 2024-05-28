@@ -1,5 +1,6 @@
 ---
 layout: page
+permalink:  /attribution
 title: Attributions
 ---
 - CMS is Jekyll

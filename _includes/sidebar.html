@@ -21,23 +21,23 @@
                         <!-- Section -->
                             <section>
                                 <header class="major">
-                                    <h2>About</h2>
+                                    <h2>{{ site.data.strings.sidebar-title }}</h2>
                                 </header>
-                                <p>{{ site.data.strings.about-message }}</p>
+                                <p>{{ site.data.strings.sidebar-message }}</p>
                             </section>
 
                             <section>
-                                <!-- <p class="feed-subscribe"> -->
+                                <p class="feed-subscribe"> 
                                     <a href="{{ site.feed.path | default: 'feed.xml' | absolute_url }}">
-                                        RSS Feed
-                                    </a>
-                                  <!-- </p> -->
+                                        {{ site.data.strings.rss-message }}
+                                    </a> 
+                                  </p>
                             </section>
 
                             {% if ishome != true %}
                             <section>
                                 <header class="major">
-                                    <h2>Latest Posts</h2>
+                                    <h2>{{ site.data.strings.mini-posts-title }}</h2>
                                 </header>
                                 <div class="mini-posts">
                                 {%- for post in posts limit:3 -%}
@@ -52,7 +52,7 @@
                                 {%- endfor -%}
                                 </div>
                                 <ul class="actions">
-                                    <li><a href="/index.html" class="button">More Posts</a></li>
+                                    <li><a href="/index.html" class="button">{{ site.data.strings.mini-posts-button-message }}</a></li>
                                 </ul>
                             </section>
                             {% endif %}
