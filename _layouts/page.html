@@ -1,14 +1,52 @@
----
-layout: base
----
-<article class="post">
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>{{ page.title | escape }}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<style>
+			img{
+    					width:100%;
+    					max-width:600px;
+					}
+		</style>
+	</head>
+	<body class="is-preload">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title | escape }}</h1>
-  </header>
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-  <div class="post-content">
-    {{ content }}
-  </div>
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
 
-</article>
+							<!-- Header -->
+              				{%- include header.html -%}
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h3>{{ page.title | escape }}</h3>
+									</header>
+                  					{{ content }}
+								</section>
+
+						</div>
+					</div>
+          </div>
+
+		<!-- Scripts -->
+			<!-- <script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/browser.min.js"></script>
+			<script src="/assets/js/breakpoints.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<script src="/assets/js/main.js"></script> -->
+
+	</body>
+</html>
