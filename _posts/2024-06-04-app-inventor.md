@@ -21,5 +21,3 @@ I figured that a guessing game would be a good place to start to achieve these g
 | Low | Equal | High |
 | --- | ----- | ---- |
 |  ![guesstoolow.jpg](/assets/images/guesstoolow.jpg)   |    ![guesscorrect.jpg](/assets/images/guesscorrect.jpg)   |   ![guesstoohigh.jpg](/assets/images/guesstoohigh.jpg)   |
-
-![codi-logo.png](/assets/images/thumbnails/codi-logo.png)
