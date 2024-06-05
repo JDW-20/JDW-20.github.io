@@ -4,6 +4,7 @@ title: First App
 categories: assignment appinventor
 share: "true"
 published: "true"
+image: /assets/thumbnails/codi-logo.png
 ---
 When I was using App Inventor, I wanted to learn how to do the following
 - Get user input
@@ -20,4 +21,3 @@ I figured that a guessing game would be a good place to start to achieve these g
 | Low | Equal | High |
 | --- | ----- | ---- |
 |  ![guesstoolow.jpg](/assets/images/guesstoolow.jpg)   |    ![guesscorrect.jpg](/assets/images/guesscorrect.jpg)   |   ![guesstoohigh.jpg](/assets/images/guesstoohigh.jpg)   |
-
