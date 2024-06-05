@@ -4,6 +4,7 @@ title: First App
 categories: assignment appinventor
 share: "true"
 published: "true"
+image: /assets/thumbnails/codi-logo.png
 ---
 When I was using App Inventor, I wanted to learn how to do the following
 - Get user input
