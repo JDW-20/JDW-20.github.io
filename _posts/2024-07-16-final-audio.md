@@ -3,7 +3,7 @@ layout: post
 title:  "Audio"
 image: /assets/images/thumbnails/goose.jpg
 excerpt: ""
-categories: assignment freecad
+categories: assignment audio
 published: true
 ---
 ## Number 9
