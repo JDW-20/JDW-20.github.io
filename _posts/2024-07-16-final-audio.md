@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Audio"
-image: /assets/images/thumbnails/goose.jpg
+image: /assets/images/thumbnails/lennon.jpg
 excerpt: ""
 categories: assignment audio
 published: true
