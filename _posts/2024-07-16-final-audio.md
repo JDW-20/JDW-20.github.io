@@ -4,7 +4,7 @@ title:  "FreeCAD :)"
 image: /assets/images/thumbnails/goose.jpg
 excerpt: ""
 categories: assignment freecad
-published: false
+published: true
 ---
 ## Number 9
 
