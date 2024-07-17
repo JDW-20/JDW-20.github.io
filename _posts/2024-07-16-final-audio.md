@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "FreeCAD :)"
+title:  "Audio"
 image: /assets/images/thumbnails/goose.jpg
 excerpt: ""
 categories: assignment freecad
